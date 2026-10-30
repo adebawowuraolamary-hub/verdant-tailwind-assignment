@@ -641,3 +641,197 @@ body {
 .add-button:hover {
   background-color: #223929;
 }
+
+/* =========================================
+   MOBILE RESPONSIVENESS IMPROVEMENTS
+   ========================================= */
+
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Header */
+  .header-container {
+    padding: 14px 16px;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .header-group-1,
+  .header-group-2 {
+    gap: 12px;
+  }
+
+  .logo {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+  }
+
+  .logo-container h1 {
+    font-size: 23px;
+  }
+
+  .login-link,
+  .basket-button {
+    padding: 8px 11px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  /* Announcement */
+  .message-container {
+    padding: 10px 14px;
+    font-size: 11px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .message-container .yellow-dot {
+    flex-shrink: 0;
+  }
+
+  /* Hero */
+  body > section:nth-of-type(2) {
+    display: block;
+    padding: 22px 16px;
+  }
+
+  body > section:nth-of-type(2) > div:first-child {
+    gap: 15px;
+    min-width: 0;
+  }
+
+  .hero-text-message {
+    max-width: 100%;
+    font-size: 11px;
+  }
+
+  body > section:nth-of-type(2) h1 {
+    font-size: 28px;
+    line-height: 1.15;
+  }
+
+  body > section:nth-of-type(2) p {
+    line-height: 1.7;
+  }
+
+  /* Aisles */
+  body > section:nth-of-type(3) {
+    padding: 32px 16px;
+  }
+
+  body > section:nth-of-type(3) > div:last-child {
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  body > section:nth-of-type(3) img {
+    height: 120px;
+  }
+
+  /* How it works */
+  body > section:nth-of-type(4) {
+    padding: 32px 16px;
+    gap: 25px;
+  }
+
+  body > section:nth-of-type(4) h3 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  body > section:nth-of-type(4) > div:last-child {
+    gap: 12px;
+  }
+
+  body > section:nth-of-type(4) > div:last-child > div {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  /* Weekly picks */
+  body > section:nth-of-type(5) {
+    padding: 32px 16px;
+  }
+
+  body > section:nth-of-type(5) > div:first-child {
+    gap: 15px;
+  }
+
+  body > section:nth-of-type(5) h3 {
+    font-size: 24px;
+  }
+
+  body > section:nth-of-type(5) > div:first-child > div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  body > section:nth-of-type(5) button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  body > section:nth-of-type(5) > div:last-child {
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  body > section:nth-of-type(5) img {
+    height: 130px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 32px 16px;
+  }
+
+  footer > div:first-child {
+    gap: 25px;
+  }
+
+  footer > div:first-child > div:last-child {
+    gap: 20px;
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 400px) {
+  .header-container {
+    padding: 12px;
+  }
+
+  .header-group-1,
+  .header-group-2 {
+    gap: 8px;
+  }
+
+  .logo-container h1 {
+    font-size: 20px;
+  }
+
+  .login-link,
+  .basket-button {
+    padding: 7px 9px;
+    font-size: 11px;
+  }
+
+  body > section:nth-of-type(2) h1 {
+    font-size: 24px;
+  }
+
+  body > section:nth-of-type(3) img {
+    height: 105px;
+  }
+
+  body > section:nth-of-type(5) > div:last-child {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body > section:nth-of-type(5) img {
+    height: 105px;
+  }
+}
