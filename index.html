@@ -1,0 +1,461 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verdant</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header-container">
+      <div class="header-group-1">
+        <div class="logo-container">
+          <div class="logo"></div>
+          <h1 class="font-['Source_Serif_4',serif] font-bold">Verdant</h1>
+        </div>
+
+        <nav>
+          <ul class="nav-lists">
+            <li class="nav-item"><a href="">Shop</a></li>
+            <li class="nav-item"><a href="">Our Farms</a></li>
+            <li class="nav-item"><a href="">Recipes</a></li>
+            <li class="nav-item"><a href="">Membership</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-group-2">
+        <input
+          type="text"
+          placeholder="Search greens, bread..."
+          class="search-input"
+        />
+        <a href="" class="login-link">Login</a>
+        <button class="basket-button">Basket · 3</button>
+      </div>
+    </header>
+
+    <!-- Announcement -->
+    <section class="message-container">
+      <div class="yellow-dot"></div>
+      <p>Same-day harvest delivery — order by 2pm, on your porch by 6pm</p>
+    </section>
+
+    <!-- Hero section -->
+    <section class="flex gap-[60px] bg-[#faf7ee] p-[20px] max-[1000px]:gap-[30px]">
+      <div class="flex flex-1 flex-col gap-[20px]">
+        <div class="hero-text-message">
+          <span>New</span>
+          <p>Stone Hollow Farm strawberries are back</p>
+        </div>
+
+        <h1 class="font-['Source_Serif_4',serif] text-[60px] font-normal max-[700px]:text-[30px]">
+          Groceries that still taste like the farm.
+        </h1>
+
+        <p class="text-[13px] leading-[1.8] text-[#6f6a5c]">
+          Picked at dawn from 42 family farms, packed without plastic, and
+          delivered to your door in under 4 hours. Fresher than the market,
+          easier than the list.
+        </p>
+
+        <div class="flex h-[48px] w-fit items-center gap-[15px] rounded-[30px] border border-[#e3decb] bg-white p-[5px] pl-[15px]">
+          <input type="text" placeholder="Enter ZIP · e.g. 11215" />
+          <button>Shop fresh</button>
+        </div>
+
+        <div class="flex items-center gap-[10px]">
+          <div class="flex items-center gap-[10px] text-[13px] text-[#1f2e24]">
+            <div class="overstacked-avatar-container">
+              <div class="avatar-1"></div>
+              <div class="avatar-2"></div>
+              <div class="avatar-3"></div>
+            </div>
+            <p>28k happy neighbors</p>
+          </div>
+
+          <div class="border-l-2 border-[#e3decb] pl-[10px]">
+            <p>4.9 <span> · 6,200 reviews</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero image -->
+      <div class="flex flex-1 justify-end max-[700px]:hidden">
+        <div class="relative h-[415px] w-[478px] rounded-[26px] border border-[#e3decb] p-[11px] max-[1000px]:h-[290px] max-[1000px]:w-[300px]">
+
+          <img
+            src="assets/images/overhead.png"
+            alt="Freshly harvested farm produce"
+            class="block h-[87%] w-full rounded-[18px] object-cover"
+          />
+
+          <!-- Delivery time badge -->
+          <div class="absolute left-[-30px] top-[30px] flex gap-[10px] rounded-[14px] border border-[#ece6d6] bg-white px-[13px] py-[10px] shadow-[0_1px_0_rgba(0,0,0,0.05)]">
+            <span class="flex h-[30px] w-[30px] shrink-0 items-center justify-center rounded-full bg-[#e4ebd6]">
+              <i class="ph ph-timer timer-icon"></i>
+            </span>
+
+            <div>
+              <h6 class="text-[13px] font-medium">2h 14m</h6>
+              <p class="text-[11px] text-[#a9b6a8]">avg. farm to door</p>
+            </div>
+          </div>
+
+          <!-- Organic badge -->
+          <div class="absolute bottom-[60px] right-[-20px] flex gap-[10px] rounded-[14px] bg-[#223929] px-[13px] py-[10px]">
+            <span class="flex h-[30px] w-[30px] shrink-0 items-center justify-center rounded-full bg-[#4a7c59]">
+              <i class="ph ph-check"></i>
+            </span>
+
+            <div>
+              <h6 class="text-[13px] font-medium text-white">100% organic</h6>
+              <p class="text-[11px] text-[#a9b6a8]">certified · no pesticides</p>
+            </div>
+          </div>
+
+          <!-- Harvest box information -->
+          <div class="flex justify-between">
+            <div>
+              <h6 class="text-[13px] font-medium text-[#1f2e24]">
+                Today's harvest box
+              </h6>
+              <p class="mt-[3px] text-[11px] text-[#6f6a5c]">
+                12 seasonal items · serves 3–4
+              </p>
+            </div>
+
+            <div class="flex items-center gap-[5px] self-center">
+              <h4 class="font-['Source_Serif_4',serif] text-[22px] font-normal text-[#1f2e24]">
+                $38
+              </h4>
+              <button class="rounded-full border-0 bg-[#1f2e24] px-[15px] py-[5px] text-white">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aisles section -->
+    <section class="bg-[#faf7ee] px-[20px] py-[50px]">
+      <div class="flex flex-wrap justify-between">
+        <div>
+          <p class="text-[12px] text-[#4a7c59]">Aisles</p>
+          <h3 class="font-['Source_Serif_4',serif] text-[27px] font-normal">
+            Shop by craving
+          </h3>
+        </div>
+
+        <a href="" class="self-end text-[13px] text-[#1f2e24]">
+          View all aisles &RightArrow;
+        </a>
+      </div>
+
+      <div class="mt-[30px] grid grid-cols-2 gap-[20px] min-[601px]:grid-cols-4 min-[901px]:grid-cols-6">
+
+        <div class="overflow-hidden rounded-[12px] border border-[#e3decb] bg-[#faf7ee]">
+          <img
+            src="assets/fresh-spinach-leaves.png"
+            alt="Fresh spinach leaves"
+            class="block h-[160px] w-full rounded-t-[12px] object-cover"
+          />
+          <div class="p-[10px]">
+            <h4 class="text-[13px] font-semibold text-[#1f2e24]">Produce</h4>
+            <p class="text-[11px] text-[#6f6a5c]">124 items</p>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-[12px] border border-[#e3decb] bg-[#faf7ee]">
+          <img
+            src="assets/milk-bottles,-eggs-and-cheese.png"
+            alt="Milk, eggs, and cheese"
+            class="block h-[160px] w-full rounded-t-[12px] object-cover"
+          />
+          <div class="p-[10px]">
+            <h4 class="text-[13px] font-semibold text-[#1f2e24]">Produce</h4>
+            <p class="text-[11px] text-[#6f6a5c]">124 items</p>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-[12px] border border-[#e3decb] bg-[#faf7ee]">
+          <img
+            src="assets/bread-loaves-and-pastries.png"
+            alt="Fresh bread and pastries"
+            class="block h-[160px] w-full rounded-t-[12px] object-cover"
+          />
+          <div class="p-[10px]">
+            <h4 class="text-[13px] font-semibold text-[#1f2e24]">Produce</h4>
+            <p class="text-[11px] text-[#6f6a5c]">124 items</p>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-[12px] border border-[#e3decb] bg-[#faf7ee]">
+          <img
+            src="assets/jar- of-pantry-staples-on-a-shelf.png"
+            alt="Pantry staples"
+            class="block h-[160px] w-full rounded-t-[12px] object-cover"
+          />
+          <div class="p-[10px]">
+            <h4 class="text-[13px] font-semibold text-[#1f2e24]">Produce</h4>
+            <p class="text-[11px] text-[#6f6a5c]">124 items</p>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-[12px] border border-[#e3decb] bg-[#faf7ee]">
+          <img
+            src="assets/salmon-fillet-with-lemon-and-asparagus.png"
+            alt="Salmon fillet with lemon and asparagus"
+            class="block h-[160px] w-full rounded-t-[12px] object-cover"
+          />
+          <div class="p-[10px]">
+            <h4 class="text-[13px] font-semibold text-[#1f2e24]">Produce</h4>
+            <p class="text-[11px] text-[#6f6a5c]">124 items</p>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-[12px] border border-[#e3decb] bg-[#faf7ee]">
+          <img
+            src="assets/lavender-and-eucalyptus-bouquet.png"
+            alt="Lavender and eucalyptus bouquet"
+            class="block h-[160px] w-full rounded-t-[12px] object-cover"
+          />
+          <div class="p-[10px]">
+            <h4 class="text-[13px] font-semibold text-[#1f2e24]">Produce</h4>
+            <p class="text-[11px] text-[#6f6a5c]">124 items</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="flex justify-between gap-[20px] bg-[#eaedda] px-[20px] py-[50px] max-[640px]:flex-col">
+      <div class="flex flex-col gap-[15px]">
+        <p class="text-[12px] text-[#4a7c59]">How Verdant works</p>
+
+        <h3 class="font-['Source_Serif_4',serif] text-[27px] font-normal text-[#1f2e24]">
+          From soil to supper in three steps
+        </h3>
+
+        <p class="text-[13px] text-[#6f6a5c]">
+          No warehouses, no week-old lettuce. We cut out the middle miles so
+          flavor — and farmers — get more.
+        </p>
+
+        <a href="" class="inline-block h-[39px] w-fit rounded-[30px] bg-[#2f5d39] px-[22px] py-[10px] text-[13px] text-white no-underline">
+          Start your first box
+        </a>
+      </div>
+
+      <div class="flex flex-col gap-[20px]">
+        <div class="flex gap-[15px] rounded-[12px] border border-[#e3decb] bg-[#faf7ee] px-[23px] py-[21px]">
+          <h3 class="font-['Source_Serif_4',serif] text-[22px] font-normal text-[#2f5d39]">01</h3>
+          <div>
+            <h5 class="font-semibold text-[#1f2e24]">You shop the harvest</h5>
+            <p class="text-[13px] text-[#6f6a5c]">
+              Live inventory from farms within 100 miles. What you see was
+              picked this morning.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-[15px] rounded-[12px] border border-[#e3decb] bg-[#faf7ee] px-[23px] py-[21px]">
+          <h3 class="font-['Source_Serif_4',serif] text-[22px] font-normal text-[#2f5d39]">02</h3>
+          <div>
+            <h5 class="font-semibold text-[#1f2e24]">We pack light &amp; cold</h5>
+            <p class="text-[13px] text-[#6f6a5c]">
+              Paper, compostable wrap and chilled totes. Zero plastic, zero
+              wilting.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-[15px] rounded-[12px] border border-[#e3decb] bg-[#faf7ee] px-[23px] py-[21px]">
+          <h3 class="font-['Source_Serif_4',serif] text-[22px] font-normal text-[#2f5d39]">03</h3>
+          <div>
+            <h5 class="font-semibold text-[#1f2e24]">Doorstep in hours</h5>
+            <p class="text-[13px] text-[#6f6a5c]">
+              E-bike couriers on 2-hour windows. Track from field to front step.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weekly picks -->
+    <section class="bg-[#faf7ee] px-[20px] py-[50px]">
+      <div class="flex flex-wrap justify-between gap-[15px]">
+        <div>
+          <p class="text-[12px] text-[#4a7c59]">This week's picks</p>
+          <h3 class="font-['Source_Serif_4',serif] text-[27px] font-normal text-[#1f2e24]">
+            Fresh off the truck
+          </h3>
+        </div>
+
+        <div class="flex items-end gap-[8px]">
+          <button class="rounded-[30px] border border-[#223929] bg-[#223929] px-[16px] py-[6px] text-[13px] text-white">All</button>
+          <button class="rounded-[30px] border border-[#e3decb] bg-white px-[16px] py-[6px] text-[13px] text-[#1f2e24]">Veggies</button>
+          <button class="rounded-[30px] border border-[#e3decb] bg-white px-[16px] py-[6px] text-[13px] text-[#1f2e24]">Bakery</button>
+          <button class="rounded-[30px] border border-[#e3decb] bg-white px-[16px] py-[6px] text-[13px] text-[#1f2e24]">Dairy</button>
+        </div>
+      </div>
+
+      <div class="mt-[30px] grid grid-cols-1 gap-[20px] min-[501px]:grid-cols-2 min-[901px]:grid-cols-4">
+
+        <!-- Product 1 -->
+        <div class="overflow-hidden rounded-[12px] border border-[#e3decb] bg-white">
+          <div class="relative">
+            <img src="assets/red-yellow-pepper.png" alt="Heirloom tomatoes" class="block h-[160px] w-full object-cover" />
+            <span class="absolute left-[10px] top-[10px] rounded-[30px] bg-[#faf7ee] px-[10px] py-[3px] text-[10px] text-[#1f2e24]">Peak season</span>
+          </div>
+          <div class="px-[12px] py-[15px]">
+            <h4 class="text-[13px] font-semibold text-[#1f2e24]">Heirloom Tomatoes</h4>
+            <p class="mt-[3px] text-[11px] text-[#6f6a5c]">Stone Hollow · 12mi</p>
+            <div class="mt-[18px] flex items-center justify-between">
+              <p class="text-[13px] font-semibold text-[#1f2e24]">$4.20 /lb</p>
+              <button aria-label="Add to basket" class="flex h-[28px] w-[28px] items-center justify-center rounded-full border-0 bg-[#2f5d39] text-white">
+                <i class="ph ph-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="overflow-hidden rounded-[12px] border border-[#e3decb] bg-white">
+          <div class="relative">
+            <img src="assets/sliced-sourdough.png" alt="Sourdough loaf" class="block h-[160px] w-full object-cover" />
+            <span class="absolute left-[10px] top-[10px] rounded-[30px] bg-[#faf7ee] px-[10px] py-[3px] text-[10px] text-[#1f2e24]">Baked today</span>
+          </div>
+          <div class="px-[12px] py-[15px]">
+            <h4 class="text-[13px] font-semibold text-[#1f2e24]">Sourdough Loaf</h4>
+            <p class="mt-[3px] text-[11px] text-[#6f6a5c]">Juniper Bakery · baked 6am</p>
+            <div class="mt-[18px] flex items-center justify-between">
+              <p class="text-[13px] font-semibold text-[#1f2e24]">$7.50</p>
+              <button aria-label="Add to basket" class="flex h-[28px] w-[28px] items-center justify-center rounded-full border-0 bg-[#2f5d39] text-white">
+                <i class="ph ph-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="overflow-hidden rounded-[12px] border border-[#e3decb] bg-white">
+          <div class="relative">
+            <img src="assets/eggs.png" alt="Carton of pasture eggs" class="block h-[160px] w-full object-cover" />
+            <span class="absolute left-[10px] top-[10px] rounded-[30px] bg-[#faf7ee] px-[10px] py-[3px] text-[10px] text-[#1f2e24]">Pasture-raised</span>
+          </div>
+          <div class="px-[12px] py-[15px]">
+            <h4 class="text-[13px] font-semibold text-[#1f2e24]">Pasture Eggs, dozen</h4>
+            <p class="mt-[3px] text-[11px] text-[#6f6a5c]">Clover Fold · 28mi</p>
+            <div class="mt-[18px] flex items-center justify-between">
+              <p class="text-[13px] font-semibold text-[#1f2e24]">$6.90</p>
+              <button aria-label="Add to basket" class="flex h-[28px] w-[28px] items-center justify-center rounded-full border-0 bg-[#2f5d39] text-white">
+                <i class="ph ph-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="overflow-hidden rounded-[12px] border border-[#e3decb] bg-white">
+          <div class="relative">
+            <img src="assets/honey.png" alt="Jar of wildflower honey" class="block h-[160px] w-full object-cover" />
+            <span class="absolute left-[10px] top-[10px] rounded-[30px] bg-[#faf7ee] px-[10px] py-[3px] text-[10px] text-[#1f2e24]">Small batch</span>
+          </div>
+          <div class="px-[12px] py-[15px]">
+            <h4 class="text-[13px] font-semibold text-[#1f2e24]">Wildflower Honey</h4>
+            <p class="mt-[3px] text-[11px] text-[#6f6a5c]">Beelove · raw &amp; unfiltered</p>
+            <div class="mt-[18px] flex items-center justify-between">
+              <p class="text-[13px] font-semibold text-[#1f2e24]">$11.00</p>
+              <button aria-label="Add to basket" class="flex h-[28px] w-[28px] items-center justify-center rounded-full border-0 bg-[#2f5d39] text-white">
+                <i class="ph ph-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1f2e24] px-[30px] py-[50px] text-white max-[600px]:px-[20px]">
+      <div class="mx-auto flex max-w-[1200px] flex-wrap justify-between gap-[40px]">
+
+        <!-- Brand information -->
+        <div class="max-w-[320px]">
+          <h3 class="font-['Source_Serif_4',serif] text-[30px] font-normal">
+            Verdant
+          </h3>
+          <p class="mt-[12px] text-[13px] leading-[1.8] text-[#a9b6a8]">
+            42 family farms within 100 miles. Picked at dawn, packed without
+            plastic, and delivered to your door in under 4 hours.
+          </p>
+        </div>
+
+        <!-- Footer links -->
+        <div class="grid grid-cols-3 gap-[45px] max-[600px]:grid-cols-2 max-[600px]:gap-[30px]">
+
+          <div>
+            <h5 class="mb-[14px] text-[13px] font-semibold">Company</h5>
+            <ul class="space-y-[10px] text-[12px] text-[#a9b6a8]">
+              <li><a href="" class="transition-colors hover:text-white">About us</a></li>
+              <li><a href="" class="transition-colors hover:text-white">Careers</a></li>
+              <li><a href="" class="transition-colors hover:text-white">Press</a></li>
+              <li><a href="" class="transition-colors hover:text-white">Sustainability</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 class="mb-[14px] text-[13px] font-semibold">Support</h5>
+            <ul class="space-y-[10px] text-[12px] text-[#a9b6a8]">
+              <li><a href="" class="transition-colors hover:text-white">Contact us</a></li>
+              <li><a href="" class="transition-colors hover:text-white">FAQs</a></li>
+              <li><a href="" class="transition-colors hover:text-white">Delivery &amp; returns</a></li>
+              <li><a href="" class="transition-colors hover:text-white">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 class="mb-[14px] text-[13px] font-semibold">Follow us</h5>
+            <ul class="space-y-[10px] text-[12px] text-[#a9b6a8]">
+              <li><a href="" class="transition-colors hover:text-white">Instagram</a></li>
+              <li><a href="" class="transition-colors hover:text-white">Facebook</a></li>
+              <li><a href="" class="transition-colors hover:text-white">Twitter</a></li>
+              <li><a href="" class="transition-colors hover:text-white">LinkedIn</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="mx-auto mt-[45px] max-w-[1200px] border-t border-[#435347] pt-[20px] text-center text-[11px] text-[#a9b6a8]">
+        © 2026 Verdant. Fresh food, closer to home.
+      </div>
+    </footer>
+  </body>
+</html>
